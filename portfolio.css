@@ -67,3 +67,5 @@
 .motion-paused #lightbox::backdrop{animation:none!important}
 @media(hover:none){.primary-link:hover{transform:none}.primary-link:before,.play-icon:before{display:none}.screenshot-button:hover img{transform:none}.engine-image:hover .image-action{transform:none}.text-link:hover:after{transform:none}}
 @media(max-width:600px){.js-motion .media-reveal:not(.visible) .screenshot-button,.js-motion .media-reveal:not(.visible) .engine-image,.js-motion .media-reveal:not(.visible) .video-wrapper{clip-path:inset(3% 0 3% round 6px)}.js-motion .reveal:not(.visible){transform:translateY(18px)}}
+
+.portfolio-download-row{display:flex;align-items:center;flex-wrap:wrap;gap:8px 18px;margin-top:18px}.portfolio-download-row .text-link{font-size:14px}.download-detail{font-size:13px;color:#425c6c}.contact-section .portfolio-download-row{margin-top:24px}.contact-section .download-detail{color:#5a5138}@media(max-width:600px){.portfolio-download-row{gap:5px 16px}.portfolio-download-row .text-link{font-size:13px}}

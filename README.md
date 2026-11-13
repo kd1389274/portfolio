@@ -24,3 +24,7 @@ GitHub のリポジトリ設定で **Settings → Pages → Build and deployment
 - `.nojekyll`：静的ファイルをそのまま公開するための設定
 
 Three.js のライセンスは `vendor/THREE-LICENSE.txt` に保持しています。このREADMEは、ゲーム素材や画像などに新たな利用許諾を付与するものではありません。
+
+## PDFポートフォリオ
+
+`assets/portfolio.pdf` をサイト上部とお問い合わせ欄からダウンロードできます。PDFを更新するときは同じファイル名で差し替え、ページ数・容量の表記も必要に応じて更新してください。
