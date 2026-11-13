@@ -90,7 +90,7 @@
           <div class="ray-heading"><h3 id="ray-title">レイトレーシングの実装</h3><p>通常の描画に、DirectX Raytracingによる反射・影・AOを組み合わせています。ピクセルシェーダーから光線を飛ばし、物体との交点をもとに描画結果を求める構成です。</p></div>
           <dl class="ray-specs"><div><dt>実装方式</dt><dd>DXR 1.1のインラインレイトレーシングを使用。メッシュごとにBLASを構築・キャッシュし、シーン内の配置をTLASにまとめています。HLSLのRayQueryで交差判定を行います。</dd></div><div><dt>画質と負荷の調整</dt><dd>表面の粗さに応じた反射方向の計算と、過去のフレーム・周囲の画素を使う時空間デノイズを実装。解像度とレイの本数を調整できるようにしています。</dd></div><div><dt>対応範囲</dt><dd>対象は不透明でスキニングを使わないメッシュです。間接光は切り替え可能な機能として実装。DXR非対応環境では、SSRやシャドウマップを使う構成です。</dd></div></dl>
         </article>
-        <div class="engine-systems reveal"><h3>ゲームを支える実装</h3><dl class="systems-list"><div><dt>車両物理</dt><dd>Bulletの車両物理を拡張し、Pacejkaタイヤモデルを導入。グリップや横滑り、動く地面への追従を扱っています。</dd></div><div><dt>編集・保存の共通化</dt><dd>PropertyBinderの定義をInspectorとJSONの保存・復元に共用し、編集項目と保存内容をそろえる設計です。</dd></div><div><dt>非同期読み込み</dt><dd>std::asyncでシーンデータの解析を非同期化し、データの準備とシーンの構築を分離しています。</dd></div><div><dt>ネットワーク</dt><dd>ENet / Epic Online Servicesを用いた通信処理と、車両のスナップショットから位置・回転を補間・予測する仕組みを実装しています。</dd></div><div><dt>AI・経路探索</dt><dd>Recast / DetourによるNavMeshの経路探索と、AIツリーの編集機能を実装しています。</dd></div></dl></div>
+        <div class="engine-systems reveal"><h3>ゲームを支える実装</h3><dl class="systems-list"><div><dt>車両物理</dt><dd>Bulletの車両物理を拡張し、Pacejkaタイヤモデルを導入。グリップや横滑り、動く地面への追従を扱っています。</dd></div><div><dt>編集・保存の共通化</dt><dd>PropertyBinderの定義をInspectorとJSONの保存・復元に共用し、編集項目と保存内容をそろえる設計です。</dd></div><div><dt>非同期読み込み</dt><dd>std::asyncでシーンデータの解析を非同期化し、データの準備とシーンの構築を分離しています。</dd></div><div><dt>AI・経路探索</dt><dd>Recast / DetourによるNavMeshの経路探索と、AIツリーの編集機能を実装しています。</dd></div></dl></div>
       </div>
     </section>
 
